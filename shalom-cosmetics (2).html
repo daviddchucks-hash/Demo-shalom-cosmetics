@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shalom Cosmetics &amp; Beauty Concept | Beauty &amp; Cosmetics in Lagos</title>
+<meta name="description" content="Shop quality lip oils, lip glosses, lipsticks, makeup products and beauty accessories from Shalom Cosmetics &amp; Beauty Concept in Lagos. Wholesale enquiries welcome.">
+<meta name="theme-color" content="#17120F">
+
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Shalom Cosmetics &amp; Beauty Concept | Beauty &amp; Cosmetics in Lagos">
+<meta property="og:description" content="Wholesale dealers in lip oils, lip glosses, lipsticks, makeup products and beauty accessories. A.P.T Trade Fair Complex, Badagry Expressway, Lagos.">
+<meta property="og:locale" content="en_NG">
+<meta property="og:site_name" content="Shalom Cosmetics &amp; Beauty Concept">
+<!-- OWNER: when you have a real photo hosted online, add it here so shared links show a preview image:
+     <meta property="og:image" content="https://yourdomain.com/share-image.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shalom Cosmetics &amp; Beauty Concept">
+<meta name="twitter:description" content="Lip oils, lip glosses, lipsticks, makeup and beauty accessories. Retail and wholesale, Lagos.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2317120F'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23B7955F' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+/* ============================================================
+   SHALOM COSMETICS & BEAUTY CONCEPT
+   1. Tokens   2. Base   3. Layout   4. Nav   5. Hero
+   6. Categories  7. Products  8. Values  9. Wholesale
+   10. About  11. Order steps  12. Location  13. Contact
+   14. Footer 15. WhatsApp float  16. Motion
+   ============================================================ */
+
+/* ---------- 1. Tokens ---------- */
+:root{
+  --paper:#FAF6F0;
+  --paper-2:#F3EBE1;
+  --clay:#E8DDCF;
+  --line:#DCD0C0;
+  --ink:#17120F;
+  --ink-soft:#4A403A;
+  --ink-mute:#7B6F66;
+  --wine:#6B2136;
+  --rose:#BE7B7E;
+  --champagne:#B7955F;
+  --on-dark:#F6F0E8;
+  --on-dark-mute:#A99C90;
+  --dark-line:#3A312B;
+  --surface:#FFFFFF;
+
+  --shell:min(1280px, 100% - 3rem);
+  --step--1:clamp(.78rem,.76rem + .1vw,.84rem);
+  --step-0:clamp(.98rem,.95rem + .16vw,1.06rem);
+  --step-1:clamp(1.14rem,1.08rem + .3vw,1.32rem);
+  --step-2:clamp(1.5rem,1.34rem + .8vw,2.05rem);
+  --step-3:clamp(2rem,1.66rem + 1.7vw,3.1rem);
+  --step-4:clamp(2.6rem,1.9rem + 3.4vw,5rem);
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141110;
+    --paper-2:#1B1715;
+    --clay:#241F1C;
+    --line:#332C27;
+    --ink:#F4EEE6;
+    --ink-soft:#C6BAAF;
+    --ink-mute:#958A80;
+    --wine:#C98A99;
+    --rose:#D39C9E;
+    --champagne:#CBA971;
+    --on-dark:#F6F0E8;
+    --on-dark-mute:#A99C90;
+    --dark-line:#3A312B;
+    --surface:#1B1715;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141110; --paper-2:#1B1715; --clay:#241F1C; --line:#332C27;
+  --ink:#F4EEE6; --ink-soft:#C6BAAF; --ink-mute:#958A80;
+  --wine:#C98A99; --rose:#D39C9E; --champagne:#CBA971; --surface:#1B1715;
+}
+
+/* ---------- 2. Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent}
+a,button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(5.5rem + env(safe-area-inset-top));overflow-x:clip}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:var(--step-0);
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+img,svg{max-width:100%;display:block}
+h1,h2,h3,h4{
+  font-family:"Fraunces",Georgia,"Times New Roman",serif;
+  font-weight:400;
+  line-height:1.08;
+  letter-spacing:-.018em;
+  margin:0;
+  font-variation-settings:"opsz" 96;
+}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:2px}
+::selection{background:var(--champagne);color:#17120F}
+
+.skip{
+  position:absolute;left:1rem;top:-4rem;z-index:200;
+  background:var(--ink);color:var(--on-dark);
+  padding:.7rem 1.1rem;font-size:var(--step--1);
+  transition:top .2s var(--ease);
+}
+.skip:focus{top:1rem}
+
+/* ---------- 3. Layout ---------- */
+.shell{width:var(--shell);margin-inline:auto}
+@media (max-width:640px){:root{--shell:min(1280px, 100% - 2.25rem)}}
+
+.band{padding-block:clamp(4.5rem,9vw,8.5rem)}
+.band--tight{padding-block:clamp(3.5rem,6vw,5.5rem)}
+.band--dark{background:#17120F;color:var(--on-dark)}
+.band--paper2{background:var(--paper-2)}
+
+.rule{height:1px;background:var(--line);border:0;margin:0}
+
+.tag{
+  font-size:var(--step--1);
+  letter-spacing:.02em;
+  color:var(--champagne);
+  display:flex;align-items:center;gap:.7rem;
+  margin-bottom:1.4rem;
+}
+.tag::after{content:"";height:1px;flex:1;max-width:5rem;background:var(--line)}
+.band--dark .tag::after{background:var(--dark-line)}
+
+.lede{
+  color:var(--ink-soft);
+  font-size:var(--step-1);
+  line-height:1.6;
+  max-width:46ch;
+}
+.band--dark .lede{color:var(--on-dark-mute)}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.95rem 1.7rem;
+  font-size:var(--step--1);
+  font-weight:500;
+  letter-spacing:.01em;
+  text-decoration:none;
+  border:1px solid transparent;
+  cursor:pointer;
+  background:none;
+  transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease);
+}
+.btn--solid{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn--solid:hover{background:var(--wine);border-color:var(--wine);color:#FFF}
+.btn--line{border-color:var(--ink);color:var(--ink)}
+.btn--line:hover{background:var(--ink);color:var(--paper)}
+.band--dark .btn--line{border-color:var(--dark-line);color:var(--on-dark)}
+.band--dark .btn--line:hover{background:var(--on-dark);color:#17120F;border-color:var(--on-dark)}
+.btn--wine{background:var(--wine);border-color:var(--wine);color:#FFF}
+.btn--wine:hover{background:#561A2B;border-color:#561A2B}
+.btn--light{background:var(--on-dark);color:#17120F;border-color:var(--on-dark)}
+.btn--light:hover{background:var(--champagne);border-color:var(--champagne);color:#17120F}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+
+.qlink{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:var(--step--1);font-weight:500;
+  text-decoration:none;
+  padding-bottom:.2rem;
+  border-bottom:1px solid var(--line);
+  transition:border-color .3s var(--ease),color .3s var(--ease);
+}
+.qlink:hover{border-color:var(--wine);color:var(--wine)}
+
+/* ---------- 4. Navigation ---------- */
+.topbar{
+  position:fixed;inset:0 0 auto 0;z-index:90;
+  padding-top:env(safe-area-inset-top);
+  transition:background-color .4s var(--ease),border-color .4s var(--ease),backdrop-filter .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.topbar.is-stuck{
+  background:color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom-color:var(--line);
+}
+.topbar__in{
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  height:clamp(4.2rem,6vw,5.2rem);
+}
+.mark{text-decoration:none;display:flex;flex-direction:column;line-height:1;gap:.3rem}
+.mark__name{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(1.02rem,2.1vw,1.24rem);
+  letter-spacing:.11em;
+  font-weight:500;
+}
+.mark__sub{
+  font-size:.6rem;letter-spacing:.3em;color:var(--ink-mute);
+  text-transform:uppercase;
+}
+.nav{display:flex;align-items:center;gap:clamp(1.1rem,2.2vw,2.1rem)}
+.nav a{
+  text-decoration:none;font-size:var(--step--1);
+  color:var(--ink-soft);
+  position:relative;padding-block:.4rem;
+  transition:color .3s var(--ease);
+}
+.nav a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--wine);transform:scaleX(0);transform-origin:left;
+  transition:transform .35s var(--ease);
+}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after,.nav a.is-active::after{transform:scaleX(1)}
+.nav a.is-active{color:var(--ink)}
+.topbar .btn--nav{padding:.7rem 1.2rem}
+.nav-desktop{display:none}
+@media (min-width:1000px){.nav-desktop{display:flex}}
+
+.burger{
+  display:inline-flex;flex-direction:column;justify-content:center;gap:5px;
+  width:2.9rem;height:2.9rem;border:1px solid var(--line);
+  background:none;cursor:pointer;align-items:center;
+}
+.burger span{display:block;width:16px;height:1px;background:var(--ink);transition:transform .3s var(--ease),opacity .2s}
+@media (min-width:1000px){.burger{display:none}}
+body.menu-open .burger span:nth-child(1){transform:translateY(3px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-3px) rotate(-45deg)}
+
+.drawer{
+  position:fixed;inset:0;z-index:80;
+  background:var(--paper);
+  display:flex;flex-direction:column;
+  padding:calc(clamp(4.2rem,6vw,5.2rem) + env(safe-area-inset-top) + 2rem) calc(1.5rem + env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  transform:translateY(-100%);
+  visibility:hidden;
+  transition:transform .5s var(--ease),visibility .5s;
+}
+body.menu-open .drawer{transform:none;visibility:visible}
+.drawer nav{display:flex;flex-direction:column}
+.drawer nav a{
+  text-decoration:none;
+  font-family:"Fraunces",Georgia,serif;
+  font-size:clamp(1.4rem,7vh,2.3rem);
+  padding:.5rem 0;
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:baseline;justify-content:space-between;
+}
+@media (max-height:480px){
+  .drawer{padding-top:calc(clamp(3.6rem,10vh,4.4rem) + env(safe-area-inset-top) + 1rem)}
+  .drawer nav a{font-size:1.25rem;padding:.4rem 0}
+  .drawer__foot{gap:.6rem}
+  .drawer__addr{display:none}
+}
+.drawer nav a span{font-family:"Inter",sans-serif;font-size:.7rem;color:var(--ink-mute)}
+.drawer__foot{display:grid;gap:1rem;margin-top:auto;padding-top:1.5rem}
+.drawer__foot .btn{width:100%}
+.drawer__addr{font-size:var(--step--1);color:var(--ink-mute);line-height:1.5}
+
+/* ---------- 5. Hero ---------- */
+.hero{position:relative;padding-top:clamp(6.5rem,12vw,9rem);padding-bottom:0;overflow:hidden}
+.hero__grid{display:grid;gap:clamp(2.5rem,5vw,3rem)}
+@media (min-width:920px){
+  .hero__grid{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);align-items:end;gap:clamp(2rem,4vw,4.5rem)}
+}
+.hero__copy{padding-bottom:clamp(2rem,6vw,5.5rem)}
+.hero h1{
+  font-size:var(--step-4);
+  font-weight:300;
+  letter-spacing:-.03em;
+  line-height:.96;
+  max-width:11ch;
+}
+.hero h1 em{font-style:italic;font-weight:300}
+.hero__lede{margin-top:1.8rem;max-width:40ch}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.4rem}
+.hero__meta{
+  display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem;
+  margin-top:clamp(2.4rem,5vw,3.6rem);
+  padding-top:1.4rem;border-top:1px solid var(--line);
+  font-size:var(--step--1);color:var(--ink-mute);
+}
+.hero__meta strong{display:block;color:var(--ink);font-weight:500}
+.hero__art{position:relative;align-self:end}
+@media (min-width:920px){
+  .hero__art{margin-right:calc((100vw - var(--shell)) / -2);}
+}
+.hero__art .frame{position:relative;aspect-ratio:5/6;background:var(--paper-2);overflow:hidden}
+.hero__note{
+  position:absolute;left:0;bottom:0;
+  background:var(--paper);
+  padding:.9rem 1.1rem .9rem 0;
+  font-size:var(--step--1);
+  color:var(--ink-mute);
+  max-width:19rem;
+  border-top:1px solid var(--line);
+}
+@media (max-width:919px){.hero__note{position:static;max-width:none;padding-right:0}}
+
+.ticker{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  overflow:hidden;background:var(--paper-2);
+}
+.ticker__row{display:flex;gap:0;width:max-content;animation:slide 44s linear infinite}
+.ticker span{
+  padding:.9rem clamp(1.2rem,3vw,2.4rem);
+  font-size:var(--step--1);color:var(--ink-mute);white-space:nowrap;
+  display:flex;align-items:center;gap:clamp(1.2rem,3vw,2.4rem);
+}
+.ticker span::after{content:"";width:4px;height:4px;background:var(--champagne);border-radius:50%}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ticker__row{animation:none}}
+
+/* ---------- 6. Categories ---------- */
+.head-split{display:grid;gap:1.6rem;align-items:end;margin-bottom:clamp(2.5rem,5vw,3.8rem)}
+@media (min-width:860px){.head-split{grid-template-columns:1.1fr .9fr;gap:3rem}}
+.head-split h2{font-size:var(--step-3);max-width:14ch;font-weight:300}
+
+.index{border-top:1px solid var(--line)}
+.index__row{
+  display:grid;grid-template-columns:auto 1fr auto;
+  align-items:center;gap:1.2rem;
+  border-bottom:1px solid var(--line);
+  padding:clamp(1.1rem,2.2vw,1.5rem) 0;
+  text-decoration:none;
+  transition:padding-left .4s var(--ease),background-color .4s var(--ease);
+}
+@media (hover:hover){.index__row:hover{padding-left:1rem;background:var(--paper-2)}}
+.index__thumb{position:relative;width:clamp(54px,9vw,74px);aspect-ratio:1;background:var(--paper-2);overflow:hidden}
+.index__text h3{font-size:var(--step-2);font-weight:300;letter-spacing:-.02em}
+.index__text p{color:var(--ink-mute);font-size:var(--step--1);margin-top:.35rem;max-width:44ch}
+.index__go{
+  width:2.4rem;height:2.4rem;border:1px solid var(--line);border-radius:50%;
+  display:grid;place-items:center;color:var(--ink-mute);flex:none;
+  transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease);
+}
+@media (hover:hover){.index__row:hover .index__go{background:var(--wine);border-color:var(--wine);color:#fff}}
+.index__go svg{width:14px;height:14px}
+
+/* ---------- 7. Products ---------- */
+.filters{
+  display:flex;gap:.4rem;overflow-x:auto;
+  padding-bottom:.9rem;margin-bottom:clamp(2rem,4vw,2.8rem);
+  border-bottom:1px solid var(--line);
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.filters::-webkit-scrollbar{display:none}
+.filters button{
+  border:1px solid var(--line);background:none;cursor:pointer;
+  padding:.6rem 1.1rem;font-size:var(--step--1);white-space:nowrap;
+  color:var(--ink-soft);
+  transition:background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);
+}
+.filters button:hover{border-color:var(--ink)}
+.filters button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+.grid{display:grid;gap:clamp(1.8rem,3.5vw,2.8rem) clamp(1.1rem,2.5vw,1.8rem);grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1100px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.grid--feature{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.grid--feature{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+.card{display:flex;flex-direction:column;height:100%}
+.card__media{
+  position:relative;background:var(--clay);overflow:hidden;
+  aspect-ratio:4/5;
+}
+.card__media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+@media (hover:hover){.card:hover .card__media img{transform:scale(1.05)}}
+.card__flag{
+  position:absolute;left:0;top:0;
+  background:var(--ink);color:var(--paper);
+  font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:.4rem .7rem;
+}
+.card__cat{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--champagne);margin-top:1rem}
+.card__name{font-size:var(--step-1);margin-top:.5rem;font-weight:400}
+.card__desc{font-size:var(--step--1);color:var(--ink-mute);margin-top:.45rem;line-height:1.55;flex:1}
+.card__foot{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:1rem;padding-top:.85rem;border-top:1px solid var(--line)}
+.card__price{font-size:var(--step--1);color:var(--ink-soft)}
+.card__ask{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-size:var(--step--1);font-weight:500;text-decoration:none;
+  color:var(--wine);white-space:nowrap;
+  transition:opacity .3s var(--ease);
+}
+.card__ask:hover{opacity:.65}
+.card__ask svg{width:15px;height:15px}
+
+.empty{
+  border:1px dashed var(--line);padding:clamp(2.5rem,6vw,4rem);text-align:center;
+  grid-column:1/-1;
+}
+.empty h3{font-size:var(--step-2);font-weight:300}
+.empty p{color:var(--ink-mute);margin-top:.6rem;font-size:var(--step--1)}
+.empty .btn{margin-top:1.6rem}
+
+.skeleton{grid-column:1/-1;display:grid;gap:inherit;grid-template-columns:inherit}
+.sk{aspect-ratio:4/5;background:linear-gradient(100deg,var(--clay) 30%,var(--paper-2) 50%,var(--clay) 70%);background-size:220% 100%;animation:shine 1.3s linear infinite}
+@keyframes shine{to{background-position:-120% 0}}
+@media (prefers-reduced-motion: reduce){.sk{animation:none}}
+
+.catalogue__note{font-size:var(--step--1);color:var(--ink-mute);max-width:56ch;margin-top:1rem}
+.count{font-size:var(--step--1);color:var(--ink-mute);margin-bottom:1.2rem}
+
+/* ---------- 8. Values ---------- */
+.values{display:grid;gap:0;border-top:1px solid var(--line)}
+@media (min-width:820px){.values{grid-template-columns:repeat(2,1fr);column-gap:clamp(2rem,5vw,5rem)}}
+.value{padding:clamp(1.6rem,3vw,2.2rem) 0;border-bottom:1px solid var(--line);display:grid;gap:.5rem}
+.value h3{font-size:var(--step-1);font-weight:500;font-family:"Inter",sans-serif;letter-spacing:0}
+.value p{color:var(--ink-mute);font-size:var(--step--1);max-width:46ch}
+.value__k{color:var(--champagne);font-size:.7rem;letter-spacing:.18em}
+
+/* ---------- 9. Wholesale ---------- */
+.wholesale__grid{display:grid;gap:clamp(2.2rem,5vw,4rem)}
+@media (min-width:900px){.wholesale__grid{grid-template-columns:1.05fr .95fr;align-items:center}}
+.wholesale h2{font-size:var(--step-3);font-weight:300;max-width:13ch}
+.wholesale .lede{margin-top:1.5rem}
+.wholesale__cta{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+.wholesale__list{border-top:1px solid var(--dark-line)}
+.wholesale__list div{
+  padding:1rem 0;border-bottom:1px solid var(--dark-line);
+  display:flex;justify-content:space-between;gap:1.5rem;font-size:var(--step--1);
+}
+.wholesale__list span:last-child{color:var(--on-dark-mute);text-align:right}
+
+/* ---------- 10. About ---------- */
+.about__grid{display:grid;gap:clamp(2.4rem,5vw,4.5rem)}
+@media (min-width:900px){.about__grid{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.about__art{position:relative;aspect-ratio:4/5;background:var(--paper-2);overflow:hidden;position:sticky;top:7rem}
+@media (max-width:899px){.about__art{position:relative;aspect-ratio:3/2}}
+.about h2{font-size:var(--step-3);font-weight:300;max-width:15ch}
+.about__body{display:grid;gap:1.2rem;margin-top:1.8rem;max-width:58ch;color:var(--ink-soft)}
+.spec{margin-top:2.4rem;border-top:1px solid var(--line)}
+.spec div{display:grid;grid-template-columns:8.5rem 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--line);font-size:var(--step--1)}
+.spec dt{color:var(--ink-mute)}
+.spec dd{margin:0}
+
+/* ---------- 11. Steps ---------- */
+.steps{display:grid;gap:0;border-top:1px solid var(--line)}
+@media (min-width:820px){.steps{grid-template-columns:repeat(3,1fr);border-top:0}}
+.step{padding:clamp(1.5rem,3vw,2.2rem) 0;border-bottom:1px solid var(--line)}
+@media (min-width:820px){
+  .step{border-top:1px solid var(--line);border-bottom:0;padding:2rem clamp(1.5rem,3vw,2.5rem) 0 0}
+  .step + .step{border-left:1px solid var(--line);padding-left:clamp(1.5rem,3vw,2.5rem)}
+}
+.step__n{font-family:"Fraunces",Georgia,serif;font-size:var(--step-2);color:var(--champagne);font-weight:300}
+.step h3{font-size:var(--step-1);margin-top:.7rem;font-weight:400}
+.step p{color:var(--ink-mute);font-size:var(--step--1);margin-top:.45rem;max-width:34ch}
+
+/* ---------- 12. Location ---------- */
+.place{display:grid;gap:0;border:1px solid var(--dark-line)}
+@media (min-width:860px){.place{grid-template-columns:1.1fr .9fr}}
+.place__body{padding:clamp(2rem,4vw,3.2rem)}
+.place__body h2{font-size:var(--step-2);font-weight:300}
+.place__addr{
+  font-family:"Fraunces",Georgia,serif;
+  font-size:var(--step-1);line-height:1.5;margin-top:1.4rem;font-style:normal;
+}
+.place__addr span{display:block}
+.place__addr span + span{color:var(--on-dark-mute)}
+.place__cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.8rem}
+.place__map{position:relative;background:#1E1915;border-left:1px solid var(--dark-line);min-height:260px}
+@media (max-width:859px){.place__map{border-left:0;border-top:1px solid var(--dark-line);min-height:220px}}
+
+/* ---------- 13. Contact ---------- */
+.contact__grid{display:grid;gap:0;border-top:1px solid var(--line)}
+@media (min-width:780px){.contact__grid{grid-template-columns:repeat(3,1fr)}}
+.ccol{padding:clamp(1.6rem,3vw,2.4rem) 0;border-bottom:1px solid var(--line)}
+@media (min-width:780px){
+  .ccol{border-bottom:0;padding-right:2rem}
+  .ccol + .ccol{border-left:1px solid var(--line);padding-left:clamp(1.5rem,3vw,2.5rem)}
+}
+.ccol h3{font-family:"Inter",sans-serif;font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);font-weight:500}
+.ccol ul{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.7rem}
+.ccol a{
+  text-decoration:none;font-size:var(--step-1);
+  font-family:"Fraunces",Georgia,serif;
+  display:inline-flex;align-items:center;gap:.6rem;
+  transition:color .3s var(--ease);
+}
+.ccol a:hover{color:var(--wine)}
+.ccol a svg{width:16px;height:16px;color:var(--champagne);flex:none}
+.ccol p{font-size:var(--step--1);color:var(--ink-mute);margin-top:1.2rem;line-height:1.55}
+
+/* ---------- 14. Footer ---------- */
+.foot{background:#17120F;color:var(--on-dark);padding-block:clamp(3.5rem,7vw,5.5rem) calc(2rem + env(safe-area-inset-bottom))}
+.foot__top{display:grid;gap:2.6rem;padding-bottom:clamp(2.5rem,5vw,3.5rem);border-bottom:1px solid var(--dark-line)}
+@media (min-width:860px){.foot__top{grid-template-columns:1.4fr .8fr 1fr;gap:3rem}}
+.foot__mark{font-family:"Fraunces",Georgia,serif;font-size:var(--step-2);letter-spacing:.06em;font-weight:400;max-width:12ch;line-height:1.15}
+.foot__tagline{color:var(--on-dark-mute);font-size:var(--step--1);margin-top:1rem}
+.foot h4{font-family:"Inter",sans-serif;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-mute);font-weight:500;margin:0 0 1.1rem}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem;font-size:var(--step--1)}
+.foot ul a{text-decoration:none;color:var(--on-dark);transition:color .3s var(--ease)}
+.foot ul a:hover{color:var(--champagne)}
+.foot address{font-style:normal;color:var(--on-dark-mute);font-size:var(--step--1);line-height:1.6;margin-bottom:1.4rem}
+.foot__bottom{
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;
+  padding-top:1.6rem;font-size:var(--step--1);color:var(--on-dark-mute);
+}
+
+/* ---------- 15. WhatsApp float ---------- */
+.wa-float{
+  position:fixed;
+  right:calc(clamp(1rem,3vw,2rem) + env(safe-area-inset-right));
+  bottom:calc(clamp(1rem,3vw,2rem) + env(safe-area-inset-bottom));
+  z-index:70;
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:var(--ink);color:var(--paper);
+  text-decoration:none;
+  padding:.85rem;border-radius:999px;
+  border:1px solid var(--ink);
+  opacity:0;transform:translateY(12px);pointer-events:none;
+  transition:opacity .4s var(--ease),transform .4s var(--ease),background-color .3s var(--ease);
+}
+.wa-float.is-shown{opacity:1;transform:none;pointer-events:auto}
+.wa-float:hover{background:var(--wine);border-color:var(--wine)}
+.wa-float svg{width:22px;height:22px;flex:none}
+.wa-float span{
+  font-size:var(--step--1);font-weight:500;
+  max-width:0;overflow:hidden;white-space:nowrap;
+  transition:max-width .45s var(--ease),padding-right .45s var(--ease);
+  padding-right:0;
+}
+@media (hover:hover) and (min-width:700px){
+  .wa-float:hover span,.wa-float:focus-visible span{max-width:11rem;padding-right:.5rem}
+}
+
+/* ---------- 15b. Image placeholders ----------
+   Empty frames standing in for real photography.
+   They disappear on their own once a photo is supplied. */
+.ph{
+  position:absolute;inset:0;
+  background:var(--paper-2);
+  display:grid;place-items:center;
+  padding:clamp(.5rem,1.6vw,1rem);
+}
+.ph__inner{
+  width:100%;height:100%;
+  border:1px dashed var(--line);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:.45rem;text-align:center;
+  padding:clamp(.6rem,2vw,1.4rem);
+}
+.ph__icon{width:clamp(22px,4vw,30px);height:auto;color:var(--champagne);flex:none}
+.ph__label{
+  font-size:var(--step--1);font-weight:500;color:var(--ink-soft);
+  letter-spacing:.01em;margin-top:.15rem;
+}
+.ph__what{font-size:.74rem;color:var(--ink-mute);max-width:24ch;line-height:1.45}
+.ph__hint{font-size:.68rem;color:var(--ink-mute);opacity:.75}
+
+/* compact: icon only, for the small category thumbnails */
+.ph--sm .ph__inner{padding:.3rem;gap:0}
+.ph--sm .ph__label,.ph--sm .ph__what,.ph--sm .ph__hint{display:none}
+.ph--sm .ph__icon{width:clamp(16px,3vw,20px)}
+
+/* on the dark bands */
+.band--dark .ph{background:#1E1915}
+.band--dark .ph__inner{border-color:var(--dark-line)}
+.band--dark .ph__label{color:var(--on-dark)}
+.band--dark .ph__what,.band--dark .ph__hint{color:var(--on-dark-mute)}
+
+/* the hero frame carries the fullest version of the message */
+.hero__art .ph__label{font-size:var(--step-1);font-family:"Fraunces",Georgia,serif;font-weight:400;color:var(--ink)}
+.hero__art .ph__icon{width:clamp(28px,5vw,38px)}
+
+@media (max-width:420px){
+  .ph__hint{display:none}
+}
+
+/* Touch-target comfort: only where a coarse pointer (finger) is in use */
+@media (pointer:coarse){
+  .filters button{padding:.75rem 1.15rem;min-height:2.75rem}
+  .index__go{width:2.75rem;height:2.75rem}
+  .card__ask{padding:.4rem 0;min-height:2.5rem}
+  .foot ul a,.ccol a{padding-block:.3rem}
+  .nav a{padding-block:.7rem}
+}
+
+/* ---------- 16. Motion ---------- */
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.is-in{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+@media (prefers-reduced-motion: reduce){
+  .js .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ========== NAVIGATION ========== -->
+<header class="topbar" id="topbar">
+  <div class="shell topbar__in">
+    <a class="mark" href="#home" aria-label="Shalom Cosmetics and Beauty Concept, home">
+      <span class="mark__name">SHALOM</span>
+      <span class="mark__sub">Cosmetics &amp; Beauty Concept</span>
+    </a>
+
+    <nav class="nav nav-desktop" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#wholesale">Wholesale</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:.7rem">
+      <a class="btn btn--solid btn--nav" data-wa="general" href="#" style="display:none" id="navWa">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+        WhatsApp
+      </a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="#home">Home <span>01</span></a>
+    <a href="#products">Products <span>02</span></a>
+    <a href="#about">About <span>03</span></a>
+    <a href="#wholesale">Wholesale <span>04</span></a>
+    <a href="#contact">Contact <span>05</span></a>
+  </nav>
+  <div class="drawer__foot">
+    <a class="btn btn--wine" data-wa="general" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+      Message us on WhatsApp
+    </a>
+    <p class="drawer__addr">Shop 17, A.P.T Tailoring Block 1<br>A.P.T Trade Fair Complex<br>Badagry Expressway, Lagos</p>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="shell hero__grid">
+    <div class="hero__copy">
+      <h1>Beauty, carefully <em>chosen.</em></h1>
+      <p class="lede hero__lede">Discover quality beauty products, makeup essentials and cosmetics from Shalom Cosmetics &amp; Beauty Concept.</p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#catalogue">Shop Products</a>
+        <a class="btn btn--line" data-wa="general" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero__meta">
+        <div><strong>Lip oils, gloss &amp; lipstick</strong>Makeup and beauty accessories</div>
+        <div><strong>Retail &amp; wholesale</strong>Quantity orders welcome</div>
+        <div><strong>Trade Fair Complex</strong>Badagry Expressway, Lagos</div>
+      </div>
+    </div>
+
+    <div class="hero__art">
+      <div class="frame" id="heroArt"></div>
+      <p class="hero__note">Demonstration site. Every image frame is waiting for Shalom Cosmetics’ own product photography.</p>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__row" id="ticker"></div>
+  </div>
+</section>
+
+<!-- ========== CATEGORIES ========== -->
+<section class="band" id="products">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">What we stock</p>
+        <h2>Six shelves, one counter.</h2>
+      </div>
+      <p class="lede">Everything we carry falls into these groups. Tell us the category you need and we will send you what is currently in stock.</p>
+    </div>
+
+    <div class="index" id="categoryIndex"></div>
+  </div>
+</section>
+
+<!-- ========== FEATURED ========== -->
+<section class="band band--paper2 band--tight">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">On the shelf</p>
+        <h2>A look at what customers ask for most.</h2>
+      </div>
+      <p class="lede">Message us for the current price and availability of any item — stock changes regularly.</p>
+    </div>
+    <div class="grid grid--feature" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ========== CATALOGUE ========== -->
+<section class="band" id="catalogue">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">Catalogue</p>
+        <h2>Browse by category.</h2>
+      </div>
+      <p class="catalogue__note">These listings show the kinds of products we stock so you can tell us exactly what you want. Prices and availability are confirmed on WhatsApp, and orders can be arranged for pickup or delivery.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter products by category" id="filters"></div>
+    <p class="count" id="count" role="status" aria-live="polite"></p>
+    <div class="grid" id="catalogueGrid"></div>
+  </div>
+</section>
+
+<!-- ========== WHY SHALOM ========== -->
+<section class="band band--tight">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">Why Shalom Cosmetics</p>
+        <h2>How we work.</h2>
+      </div>
+      <p class="lede">A straightforward way to buy beauty products — in a single unit or by the carton.</p>
+    </div>
+
+    <div class="values reveal">
+      <div class="value">
+        <span class="value__k">01</span>
+        <h3>Quality beauty products</h3>
+        <p>A focus on high-quality cosmetics and beauty products across lips, face and accessories.</p>
+      </div>
+      <div class="value">
+        <span class="value__k">02</span>
+        <h3>Wholesale available</h3>
+        <p>Products suitable for retailers and businesses buying in quantity.</p>
+      </div>
+      <div class="value">
+        <span class="value__k">03</span>
+        <h3>Easy ordering</h3>
+        <p>Contact the shop directly on WhatsApp and get a reply about price, availability and delivery.</p>
+      </div>
+      <div class="value">
+        <span class="value__k">04</span>
+        <h3>Reliable product sourcing</h3>
+        <p>We work with major distributors for our beauty and makeup products.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHOLESALE ========== -->
+<section class="band band--dark wholesale" id="wholesale">
+  <div class="shell wholesale__grid">
+    <div class="reveal">
+      <p class="tag">Wholesale</p>
+      <h2>Buying for your business?</h2>
+      <p class="lede">Shalom Cosmetics &amp; Beauty Concept supplies beauty and makeup products for customers looking to purchase in quantity. Contact us to discuss available products and wholesale orders.</p>
+      <div class="wholesale__cta">
+        <a class="btn btn--light" data-wa="wholesale" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+          Discuss a Wholesale Order
+        </a>
+        <a class="btn btn--line" href="tel:+2348033458572">Call +234 803 345 8572</a>
+      </div>
+    </div>
+
+    <div class="wholesale__list reveal">
+      <div><span>Categories available in quantity</span><span>Lip oils, gloss, lipstick, makeup, accessories</span></div>
+      <div><span>Who we supply</span><span>Retailers and businesses</span></div>
+      <div><span>How to start</span><span>Send your list on WhatsApp</span></div>
+      <div><span>Collection</span><span>Pickup at the shop or delivery arranged</span></div>
+      <div><span>Pricing</span><span>Quoted per order</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="band" id="about">
+  <div class="shell about__grid about">
+    <div class="about__art reveal" id="aboutArt"></div>
+    <div class="reveal">
+      <p class="tag">About</p>
+      <h2>A cosmetics counter at the Trade Fair.</h2>
+      <div class="about__body">
+        <p>Shalom Cosmetics &amp; Beauty Concept is a beauty and cosmetics business based at the A.P.T Trade Fair Complex on Badagry Expressway, Lagos. We specialise in beauty products, makeup essentials and general merchandise.</p>
+        <p>Our shelves cover lip oils, lip glosses and lipsticks alongside makeup products and the accessories that go with them. We work with distributors for our makeup items and lip products, and we sell both to individual customers and to buyers purchasing in quantity.</p>
+        <p>Customers reach us two ways: in person at Shop 17, or on WhatsApp, where we confirm what is in stock, agree a price and arrange pickup or delivery.</p>
+      </div>
+
+      <dl class="spec">
+        <div><dt>Business</dt><dd>Wholesale dealers in beauty and cosmetics products</dd></div>
+        <div><dt>Stock</dt><dd>Lip oils, lip glosses, lipsticks, makeup products, beauty accessories, general merchandise</dd></div>
+        <div><dt>Serving</dt><dd>Walk-in customers and wholesale buyers</dd></div>
+        <div><dt>Ordering</dt><dd>In person at the shop or on WhatsApp</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW TO ORDER ========== -->
+<section class="band band--paper2 band--tight">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">How to order</p>
+        <h2>Three steps, start to finish.</h2>
+      </div>
+      <p class="lede">There is no checkout to fill in. You pick what you want and we handle the rest in a conversation.</p>
+    </div>
+
+    <div class="steps reveal">
+      <div class="step">
+        <span class="step__n">01</span>
+        <h3>Browse</h3>
+        <p>Explore available beauty products.</p>
+      </div>
+      <div class="step">
+        <span class="step__n">02</span>
+        <h3>Contact</h3>
+        <p>Send your selected products through WhatsApp.</p>
+      </div>
+      <div class="step">
+        <span class="step__n">03</span>
+        <h3>Confirm</h3>
+        <p>Discuss price, availability and delivery or pickup details.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(2rem,4vw,3rem)">
+      <a class="btn btn--solid" data-wa="general" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+        Start an Order on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LOCATION ========== -->
+<section class="band band--dark band--tight">
+  <div class="shell">
+    <div class="place reveal">
+      <div class="place__body">
+        <p class="tag">Find us</p>
+        <h2>Come to the shop.</h2>
+        <address class="place__addr">
+          <span>A.P.T Tailoring Block 1, Shop 17</span>
+          <span>A.P.T Trade Fair Complex</span>
+          <span>Badagry Expressway, Lagos, Nigeria</span>
+        </address>
+        <div class="place__cta">
+          <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=A.P.T%20Trade%20Fair%20Complex%2C%20Badagry%20Expressway%2C%20Lagos%2C%20Nigeria" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            Get Directions
+          </a>
+          <a class="btn btn--line" data-wa="directions" href="#">Ask for directions</a>
+        </div>
+      </div>
+      <div class="place__map" id="mapArt"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="band" id="contact">
+  <div class="shell">
+    <div class="head-split reveal">
+      <div>
+        <p class="tag">Contact</p>
+        <h2>Talk to us.</h2>
+      </div>
+      <p class="lede">WhatsApp is the fastest way to reach the shop. Calls are welcome too.</p>
+    </div>
+
+    <div class="contact__grid reveal">
+      <div class="ccol">
+        <h3>WhatsApp</h3>
+        <ul>
+          <li><a href="#" data-wa="general" data-number="2347067633796">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+            +234 706 763 3796</a></li>
+          <li><a href="#" data-wa="general" data-number="2347067632762">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+            +234 706 763 2762</a></li>
+        </ul>
+        <p>Send the products you want and we will reply with price and availability.</p>
+      </div>
+
+      <div class="ccol">
+        <h3>Phone</h3>
+        <ul>
+          <li><a href="tel:+2348033458572">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 5.5 5.5L15 12.5l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg>
+            +234 803 345 8572</a></li>
+          <li><a href="tel:+2348067451680">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 5.5 5.5L15 12.5l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg>
+            0806 745 1680</a></li>
+        </ul>
+        <p>Call during shop hours for enquiries and wholesale discussions.</p>
+      </div>
+
+      <div class="ccol">
+        <h3>Location</h3>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=A.P.T%20Trade%20Fair%20Complex%2C%20Badagry%20Expressway%2C%20Lagos%2C%20Nigeria" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            Shop 17, Block 1</a></li>
+        </ul>
+        <p>A.P.T Tailoring Block 1, A.P.T Trade Fair Complex, Badagry Expressway, Lagos, Nigeria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__top">
+      <div>
+        <p class="foot__mark">Shalom Cosmetics &amp; Beauty Concept</p>
+        <p class="foot__tagline">Beauty products &nbsp;·&nbsp; Makeup &nbsp;·&nbsp; Wholesale</p>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#wholesale">Wholesale</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <address>
+          A.P.T Tailoring Block 1, Shop 17<br>
+          A.P.T Trade Fair Complex<br>
+          Badagry Expressway, Lagos, Nigeria
+        </address>
+        <a class="btn btn--light" data-wa="general" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+          Message on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="foot__bottom">
+      <p>© 2026 Shalom Cosmetics &amp; Beauty Concept. All rights reserved.</p>
+      <p>Demonstration build — images to be supplied by the business.</p>
+      <p>+234 706 763 3796 &nbsp;·&nbsp; +234 803 345 8572</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" id="waFloat" data-wa="general" href="#" aria-label="Message Shalom Cosmetics on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+  <span>Chat with us</span>
+</a>
+
+<!-- ========== STRUCTURED DATA ========== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Store",
+  "name":"Shalom Cosmetics & Beauty Concept",
+  "description":"Wholesale dealers in lip oils, lip glosses, lipsticks, makeup products, beauty products, makeup accessories and general merchandise in Lagos, Nigeria.",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"A.P.T Tailoring Block 1, Shop 17, A.P.T Trade Fair Complex, Badagry Expressway",
+    "addressLocality":"Lagos",
+    "addressRegion":"Lagos",
+    "addressCountry":"NG"
+  },
+  "telephone":"+2348033458572",
+  "contactPoint":[
+    {"@type":"ContactPoint","contactType":"sales","telephone":"+2347067633796","availableLanguage":["en"]},
+    {"@type":"ContactPoint","contactType":"customer service","telephone":"+2347067632762","availableLanguage":["en"]},
+    {"@type":"ContactPoint","contactType":"customer service","telephone":"+2348067451680","availableLanguage":["en"]}
+  ],
+  "areaServed":"Lagos, Nigeria",
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Lip oils"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Lip glosses"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Lipsticks"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Makeup products"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Beauty accessories"}}
+  ]
+}
+</script>
+
+<script>
+/* Shalom Cosmetics & Beauty Concept — site data. Edit this file to add products. */
+
+/* ============================================================
+   DATA — everything the owner needs to edit lives here.
+   ------------------------------------------------------------
+   To add a real product:
+     1. Copy one object in PRODUCTS below.
+     2. Change name / desc / cat.
+     3. Set `image` to the URL of your real photo, e.g.
+          image: "photos/lip-oil-01.jpg"
+        Leave it as null to keep the drawn placeholder.
+     4. `art` picks which placeholder illustration is used.
+   ============================================================ */
+
+const BIZ = {
+  waPrimary:   "2347067633796",
+  waSecondary: "2347067632762",
+  name: "Shalom Cosmetics"
+};
+
+const MESSAGES = {
+  general:    "Hello Shalom Cosmetics, I would like to make an enquiry about your beauty products. Please send me details on price and availability.",
+  wholesale:  "Hello Shalom Cosmetics, I'm interested in purchasing beauty products wholesale. Please send me your available products and wholesale information.",
+  directions: "Hello Shalom Cosmetics, please send me directions to your shop at the A.P.T Trade Fair Complex.",
+  category:   (c) => `Hello Shalom Cosmetics, I'm interested in your ${c}. Please send me the price and availability.`,
+  product:    (p) => `Hello Shalom Cosmetics, I'm interested in ${p}. Please send me the price and availability.`
+};
+
+const CATEGORIES = [
+  { slug:"lip-oils",    name:"Lip Oils",           desc:"Hydrating and glossy lip essentials.",                    art:"oil" },
+  { slug:"lip-gloss",   name:"Lip Gloss",          desc:"Beauty essentials for everyday and statement looks.",     art:"gloss" },
+  { slug:"lipsticks",   name:"Lipsticks",          desc:"A selection of lipstick products for different looks.",    art:"lipstick" },
+  { slug:"makeup",      name:"Makeup",             desc:"Beauty and makeup essentials.",                           art:"palette" },
+  { slug:"accessories", name:"Beauty Accessories", desc:"Useful accessories for makeup and beauty routines.",       art:"brushes" },
+  { slug:"wholesale",   name:"Wholesale",          desc:"Products available for retailers and businesses.",         art:"carton" }
+];
+
+const PRODUCTS = [
+  { name:"Hydrating Lip Oil",      cat:"lip-oils",    art:"oil",       image:null, featured:true,  desc:"Non-sticky lip oil with a soft shine finish." },
+  { name:"Tinted Lip Oil",         cat:"lip-oils",    art:"oil",       image:null, featured:false, desc:"Lip oil with a light wash of colour." },
+  { name:"Lip Oil Set",            cat:"lip-oils",    art:"oilset",    image:null, featured:false, desc:"Assorted lip oils available as a set." },
+  { name:"Clear Lip Gloss",        cat:"lip-gloss",   art:"gloss",     image:null, featured:true,  desc:"High-shine clear gloss for everyday wear." },
+  { name:"Shimmer Lip Gloss",      cat:"lip-gloss",   art:"gloss",     image:null, featured:false, desc:"Gloss with a fine shimmer finish." },
+  { name:"Tinted Lip Gloss Set",   cat:"lip-gloss",   art:"glossset",  image:null, featured:false, desc:"A range of tinted glosses in assorted shades." },
+  { name:"Matte Lipstick",         cat:"lipsticks",   art:"lipstick",  image:null, featured:true,  desc:"Full-coverage matte finish lipstick." },
+  { name:"Satin Lipstick",         cat:"lipsticks",   art:"lipstick",  image:null, featured:false, desc:"Softer satin finish with a comfortable feel." },
+  { name:"Lipstick Collection",    cat:"lipsticks",   art:"lipsetset", image:null, featured:false, desc:"Several lipstick shades supplied together." },
+  { name:"Pressed Powder Compact", cat:"makeup",      art:"compact",   image:null, featured:false, desc:"Compact powder with a built-in mirror." },
+  { name:"Liquid Foundation",      cat:"makeup",      art:"bottle",    image:null, featured:false, desc:"Liquid foundation in assorted shades." },
+  { name:"Eyeshadow Palette",      cat:"makeup",      art:"palette",   image:null, featured:true,  desc:"Multi-pan palette covering neutral and warm tones." },
+  { name:"Makeup Brush Set",       cat:"accessories", art:"brushes",   image:null, featured:false, desc:"Brush set for face and eye application." },
+  { name:"Beauty Sponge Set",      cat:"accessories", art:"sponge",    image:null, featured:false, desc:"Blending sponges for foundation and concealer." },
+  { name:"Cosmetic Pouch",         cat:"accessories", art:"pouch",     image:null, featured:false, desc:"Zipped pouch for storing makeup." },
+  { name:"Lip Gloss Carton",       cat:"wholesale",   art:"carton",    image:null, featured:false, desc:"Lip gloss supplied by the carton for resale." },
+  { name:"Mixed Makeup Bulk Pack", cat:"wholesale",   art:"carton",    image:null, featured:false, desc:"Assorted makeup items packed for quantity buyers." }
+];
+
+/* Shalom Cosmetics & Beauty Concept — image placeholders.
+
+   Every image area on this site is currently an empty frame. Once real
+   photography exists, set `image` on a product in js/data.js and the photo
+   replaces the frame automatically. The hero, about and location frames are
+   filled from the bottom of js/main.js.
+
+   This whole file can be deleted once every image slot has a real photo. */
+
+function PH(caption, hint, mod){
+  return `<div class="ph ${mod || ""}" role="img" aria-label="Placeholder: ${caption || "photo"} will be added here">
+    <div class="ph__inner">
+      <svg class="ph__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2.75" y="4.75" width="18.5" height="14.5" rx="1.5"/>
+        <circle cx="8.6" cy="10.1" r="1.7"/>
+        <path d="M2.75 16.6 8.4 11.6l4.1 3.3 3.6-3.8 5.15 5.5"/>
+      </svg>
+      <p class="ph__label">Your photo will be here</p>
+      ${caption ? `<p class="ph__what">${caption}</p>` : ""}
+      ${hint ? `<p class="ph__hint">${hint}</p>` : ""}
+    </div>
+  </div>`;
+}
+
+const PH_COMPACT = () => PH("", "", "ph--sm");
+
+/* Shalom Cosmetics & Beauty Concept — rendering and interaction. */
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+const $  = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const catName = slug => (CATEGORIES.find(c => c.slug === slug) || {}).name || "Product";
+
+function waLink(text, number){
+  return `https://wa.me/${number || BIZ.waPrimary}?text=${encodeURIComponent(text)}`;
+}
+
+/* Wire every data-wa element */
+function wireWhatsApp(root=document){
+  $$("[data-wa]", root).forEach(el => {
+    const kind = el.dataset.wa;
+    let msg = MESSAGES.general;
+    if (kind === "wholesale")  msg = MESSAGES.wholesale;
+    if (kind === "directions") msg = MESSAGES.directions;
+    if (kind === "product")    msg = MESSAGES.product(el.dataset.product);
+    if (kind === "category")   msg = MESSAGES.category(el.dataset.category);
+    el.href = waLink(msg, el.dataset.number);
+    el.target = "_blank";
+    el.rel = "noopener";
+  });
+}
+
+/* Categories index */
+function renderCategories(){
+  $("#categoryIndex").innerHTML = CATEGORIES.map(c => `
+    <a class="index__row" href="#" data-wa="category" data-category="${c.name.toLowerCase()}">
+      <span class="index__thumb">${PH_COMPACT()}</span>
+      <span class="index__text">
+        <h3>${c.name}</h3>
+        <p>${c.desc}</p>
+      </span>
+      <span class="index__go" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>`).join("");
+  wireWhatsApp($("#categoryIndex"));
+}
+
+/* Product card */
+function cardHTML(p, flag){
+  const media = p.image
+    ? `<img src="${p.image}" alt="${p.name}" loading="lazy" decoding="async" width="800" height="1000">`
+    : PH(p.name, "800 &times; 1000px");
+  return `<article class="card">
+    <div class="card__media">
+      ${media}
+      ${flag ? `<span class="card__flag">${flag}</span>` : ""}
+    </div>
+    <p class="card__cat">${catName(p.cat)}</p>
+    <h3 class="card__name">${p.name}</h3>
+    <p class="card__desc">${p.desc}</p>
+    <div class="card__foot">
+      <span class="card__price">Price on request</span>
+      <a class="card__ask" href="#" data-wa="product" data-product="${p.name}" aria-label="Ask about ${p.name} on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+        Ask on WhatsApp
+      </a>
+    </div>
+  </article>`;
+}
+
+function renderFeatured(){
+  const items = PRODUCTS.filter(p => p.featured).slice(0, 4);
+  $("#featuredGrid").innerHTML = items.map(p => cardHTML(p)).join("");
+  wireWhatsApp($("#featuredGrid"));
+}
+
+/* Catalogue with filters */
+const FILTERS = [{slug:"all", name:"All"}, ...CATEGORIES];
+let activeFilter = "all";
+
+function renderFilters(){
+  $("#filters").innerHTML = FILTERS.map(f => `
+    <button role="tab" type="button" data-slug="${f.slug}"
+      aria-selected="${f.slug === activeFilter}" aria-controls="catalogueGrid">${f.name}</button>`).join("");
+
+  $$("#filters button").forEach(b => b.addEventListener("click", () => {
+    if (b.dataset.slug === activeFilter) return;
+    activeFilter = b.dataset.slug;
+    $$("#filters button").forEach(x => x.setAttribute("aria-selected", String(x.dataset.slug === activeFilter)));
+    renderCatalogue();
+  }));
+}
+
+function renderCatalogue(){
+  const grid = $("#catalogueGrid");
+  const list = activeFilter === "all" ? PRODUCTS : PRODUCTS.filter(p => p.cat === activeFilter);
+
+  // brief loading state so filtering reads as a deliberate change
+  grid.innerHTML = `<div class="skeleton">${'<div class="sk"></div>'.repeat(Math.min(Math.max(list.length,1), 4))}</div>`;
+  $("#count").textContent = "";
+
+  setTimeout(() => {
+    if (!list.length){
+      grid.innerHTML = `<div class="empty">
+        <h3>Nothing listed here yet</h3>
+        <p>We may still have stock in this category. Message us and we will tell you what is available.</p>
+        <a class="btn btn--solid" href="#" data-wa="general">Ask on WhatsApp</a>
+      </div>`;
+      $("#count").textContent = "0 items";
+    } else {
+      grid.innerHTML = list.map(p => cardHTML(p, p.cat === "wholesale" ? "Bulk" : "")).join("");
+      $("#count").textContent = `${list.length} item${list.length > 1 ? "s" : ""}` +
+        (activeFilter === "all" ? "" : ` in ${catName(activeFilter)}`);
+    }
+    wireWhatsApp(grid);
+  }, 180);
+}
+
+/* Ticker */
+function renderTicker(){
+  const words = ["Lip oils","Lip gloss","Lipsticks","Makeup products","Beauty accessories","General merchandise","Wholesale supply"];
+  const row = words.map(w => `<span>${w}</span>`).join("");
+  $("#ticker").innerHTML = row + row;
+}
+
+/* ============================================================
+   BEHAVIOUR
+   ============================================================ */
+function initNav(){
+  const bar = $("#topbar"), burger = $("#burger"), drawer = $("#drawer");
+
+  const onScroll = () => {
+    bar.classList.toggle("is-stuck", window.scrollY > 24);
+    $("#waFloat").classList.toggle("is-shown", window.scrollY > 420);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  const setMenu = open => {
+    document.body.classList.toggle("menu-open", open);
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    drawer.setAttribute("aria-hidden", String(!open));
+    document.body.style.overflow = open ? "hidden" : "";
+  };
+  burger.addEventListener("click", () => setMenu(!document.body.classList.contains("menu-open")));
+  $$("#drawer a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
+  window.addEventListener("resize", () => { if (window.innerWidth >= 1000) setMenu(false); });
+
+  // show the nav WhatsApp button only where there is room
+  const navWa = $("#navWa");
+  const fit = () => { navWa.style.display = window.innerWidth >= 1000 ? "inline-flex" : "none"; };
+  fit(); window.addEventListener("resize", fit);
+
+  // active section
+  const links = $$(".nav-desktop a");
+  const sections = links.map(a => $(a.getAttribute("href"))).filter(Boolean);
+  if ("IntersectionObserver" in window && sections.length){
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        links.forEach(l => l.classList.toggle("is-active", l.getAttribute("href") === "#" + en.target.id));
+      });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    sections.forEach(s => spy.observe(s));
+  }
+}
+
+function initReveal(){
+  const items = $$(".reveal");
+  if (!("IntersectionObserver" in window)){ items.forEach(i => i.classList.add("is-in")); return; }
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(en => {
+      if (en.isIntersecting){ en.target.classList.add("is-in"); obs.unobserve(en.target); }
+    });
+  }, {rootMargin:"0px 0px -8% 0px", threshold:.08});
+  items.forEach(i => io.observe(i));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  $("#heroArt").innerHTML  = PH("Main hero image", "Recommended 1200 &times; 1400px");
+  $("#aboutArt").innerHTML = PH("Shop or counter photo", "Recommended 1000 &times; 1250px");
+  $("#mapArt").innerHTML   = PH("Photo of the shop front", "Helps customers recognise Shop 17");
+  renderTicker();
+  renderCategories();
+  renderFeatured();
+  renderFilters();
+  renderCatalogue();
+  wireWhatsApp();
+  initNav();
+  initReveal();
+});
+
+</script>
+</body>
+</html>
